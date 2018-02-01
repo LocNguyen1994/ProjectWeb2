@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projectweb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#like").click(function() {
+                $("#leuk").fadeIn(1000);
+                $("#leuk").delay(1000);
+                $("#leuk").fadeOut(1000);
+            });
+        });
+        
+          $(document).ready(function() {
+            $(".like").click(function() {
+                $("#leuk").fadeIn(1000);
+                $("#leuk").delay(1000);
+                $("#leuk").fadeOut(1000);
+            });
+        });
+
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
+                $("#lijst").fadeIn(1000);
+                $("#lijst").delay(3000);
+                $("#lijst").fadeOut(1000);
+            });
+        });
+        
+        $(document).ready(function() {
+            $(".plusicon").click(function() {
+                $("#lijst").fadeIn(1000);
+                $("#lijst").delay(3000);
+                $("#lijst").fadeOut(1000);
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+       <img class="vul" src="img/vul.png" alt="">
+        <a href="index%20versie2.html"><img class="logo2" src="img/Nederlandse-spoorwegen-NS-logo.png" alt=""></a>
+        <a href="aanmelden.html"><img class="logo3" src="img/Profile.png" alt=""></a>
+
+        <!--<p class="logo">Logo</p>!-->
+    </header>
+    <div class="container">
+        <nav>
+            <div>
+                <p class="sorteren">Sorteren</p>
+                <select class="select-style">
+                <option value="sort">Sorteren op</option>
+                <option value="likes">Aantal likes</option>
+                <option value="opel">Tijdsduur hoog-laag</option>
+                <option value="audi">Tijdsduur laag-hoog</option>
+            </select>
+                <input class="mobilezoeken" type="text" name="Search" placeholder="Zoeken..">
+            </div>
+
+            <div class="search">
+                <!-- weergave goed vorm gegeven, niet af maar als je tijd heb          
+    <div class="switch-field">
+      <div class="switch-title">Weergave</div>
+      <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
+      <label for="switch_left">Afbeelding</label>
+      <input type="radio" id="switch_right" name="switch_2" value="no" />
+      <label for="switch_right">Tekst</label>
+    </div>
+               !-->
+
+
+
+
+
+                <p class="sorteren">Weergave</p>
+                <input id="keuze1" type="radio" name="keuze" value="plaatjes" checked>
+                <label for="keuze1">Afbeeldingen</label>
+                <input id="keuze2" type="radio" name="keuze" value="tekst">
+                <label for="keuze2">Lijst</label>
+
+                <input class="zoeken1" type="text" name="Search" placeholder="Zoeken..">
+                <button class="zoeken">Zoeken</button>
+            </div>
+        </nav>
+        <main>
+            <h1>Welkom op NS verhalen website</h1>
+            <div id="leuk">
+                <img class="hartje" src="img/Hartje.png" alt="">
+
+                <p>Dit verhaaltje vind je leuk!</p>
+            </div>
+
+            <div id="lijst">
+                <img class="hartje" src="img/Plusmelding.png" alt="">
+
+                <p>Verhaaltje is opgeslagen in een lijst!</p>
+            </div>
+
+            <div id="weergave">
+                <p>Afbeelding Weergave</p>
+            </div>
+
+            <!-- toevoegen !-->
+            <div class="toevoegen">
+                <div class="voegtoe">Toevoegen aan
+                    <img id="sluiten" src="img/Sluiten.png" alt="">
+                </div>
+                <div class="list">
+                    <div>
+                        <form action="">
+                            <input id="one" type="checkbox" />
+                            <label for="one">Lijst</label>
+                        </form>
+                    </div>
+                    <div>
+                        <form action="">
+                            <input id="two" type="checkbox">
+                            <label for="two">Favorieten</label>
+                        </form>
+                    </div>
+                </div>
+                <button id="myBtn" disabled>Toevoegen</button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <section>
+                <h1>Aanbevolen:</h1>
+                <div class="fadeleft"></div>
+                <div class="faderight"></div>
+                <div class="lijst">
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Ongeboren</h2>
+                            <img id="plusicon1" src="img/Plus.png" alt="">
+                        </div>
+                        <a href="rustgevend.html">
+                            <blockquote>
+                                <div class="text">Kort verhaaltje</div>
+                            </blockquote>
+                        </a>
+                        <div class="imagecontainer">
+                            <a href="Rustgevend%2520website/index.html"><img src="img/cover1.jpg" alt="verhaal1"></a>
+                            <figure class="verhaallikes">
+                                <!--The figure element can be used to annotate illustrations, diagrams, photos, code listings, etc., that are referenced in the main content of the document, but that could, without affecting the flow of the document, be moved away from that primary content — e.g., to the side of the page, to dedicated pages, or to an appendix.-->
+                                <p>150</p>
+                                <img class="like" src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Littérature</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <a href="uitbundig.html">
+                            <blockquote>
+                                <div class="text">Kort verhaaltje</div>
+                            </blockquote>
+                        </a>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover2.jpg" alt="verhaal2"></a>
+                            <div class="verhaallikes">
+                                <p>150</p>
+                                <img id="like" src="img/Likes.png" alt="">
+                            </div>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Alliteratie</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <a href="Deprimerend.html">
+                            <blockquote>
+                                <div class="text">Kort verhaaltje</div>
+                            </blockquote>
+                        </a>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover3.jpg" alt="verhaal3"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Alliteratie</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover1.jpg" alt="verhaal1"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Ongeboren</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover2.jpg" alt="verhaal2"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2> Littérature</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover3.jpg" alt="verhaal3"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Alliteratie</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover1.jpg" alt="verhaal1"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+            <section>
+                <h1>Jouw lijst: </h1>
+                <div class="fadeleft"></div>
+                <div class="faderight"></div>
+                <div class="lijst">
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Alliteratie</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover1.jpg" alt="verhaal1"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Ongeboren</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover2.jpg" alt="verhaal2"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2> Littérature </h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover3.jpg" alt="verhaal3"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Alliteratie</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover1.jpg" alt="verhaal1"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Ongeboren</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover2.jpg" alt="verhaal2"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2> Littérature</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover3.jpg" alt="verhaal3"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artikeltitel">
+                            <h2>Alliteratie</h2>
+                            <img class="plusicon" src="img/Plus.png" alt="">
+                        </div>
+                        <blockquote>
+                            <div class="text">Kort verhaaltje</div>
+                        </blockquote>
+                        <div class="imagecontainer">
+                            <a href=""><img src="img/cover1.jpg" alt="verhaal1"></a>
+                            <figure class="verhaallikes">
+                                <p>150</p>
+                                <img src="img/Likes.png" alt="">
+                            </figure>
+                            <figure class="verhaaltijd">
+                                <img src="img/Tijd%20png.png" alt="">
+                                <p>12 min</p>
+                            </figure>
+                        </div>
+                    </article>
+
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <aside>
+
+
+        <div class="filteropties">
+            <p class="titelfooter">Filteren</p>
+            <div class="kleuren">
+                Kleuren
+                <select class="select-style">
+            <option value="all">Alle kleuren</option>
+            <option value="blauw">Blauw</option>
+            <option value="zwart">Zwart</option>
+            <option value="rood">Rood</option>
+        </select>
+            </div>
+
+            <div class="sfeer">
+                Sfeerwoord
+                <select class="select-style">
+            <option value="allw">Alle woorden</option>
+            <option value="blij">Blij</option>
+            <option value="boos">Boos</option>
+            <option value="verward">Verward</option>
+        </select>
+            </div>
+
+            <div class="tijd">
+                Tijdsduur
+                <input type="range" min="01" max="30" value="05" id="slider">
+                <p id="demo"></p>
+            </div>
+
+            <div class="leeftijd">
+                Leeftijd
+                <select class="select-style">
+            <option value="18">18+</option>
+            <option value="17">17</option>
+            <option value="16">16</option>
+            <option value="15">15</option>
+        </select>
+
+            </div>
+            <div> <button>Filteren</button></div>
+        </div>
+    </aside>
+    <aside id="mobielaside">
+        <span> Filteren</span>
+    </aside>
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" id="closebtn">&times;</a>
+        <div class="overlay-content">
+            <p>Filteren</p>
+            <div class="kleurenm">
+                <label for="">Kleuren</label>
+                <select>
+            <option value="all">Alle kleuren</option>
+            <option value="blauw">Blauw</option>
+            <option value="zwart">Zwart</option>
+            <option value="rood">Rood</option>
+        </select>
+            </div>
+
+            <div class="sfeerm">
+                <label for="">Sfeerwoord</label>
+                <select>
+            <option value="allw">Alle woorden</option>
+            <option value="blij">Blij</option>
+            <option value="boos">Boos</option>
+            <option value="verward">Verward</option>
+        </select>
+            </div>
+
+            <div class="tijdm">
+                <label for="">Tijdsduur</label>
+                <input type="range" min="10" max="600" value="20" class="slider">
+            </div>
+
+            <div class="leeftijdm">
+                <label for="">Leeftijd</label>
+                <select>
+            <option value="18">18+</option>
+            <option value="17">17</option>
+            <option value="16">16</option>
+            <option value="15">15</option>
+        </select>
+            </div>
+            <div class="mobilefilterbutton"> Toon resultaten</div>
+        </div>
+
+    </div>
+
+    <script src="javascript/java.js"></script>
+</body>
+
+</html>
